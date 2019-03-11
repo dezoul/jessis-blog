@@ -2,9 +2,25 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <title></title>
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="/">home</a>
+        <a href="/about">about</a>
+        <a href="/blog">blog</a>
+        <a href="/reoures">reoures</a>
+        <a href="/work_with_me">work with me</a>
+        <a href="/contact">contact</a>
+      </nav>
+      <div class="banner" style="background-image:url('{{page.banner_path}}')">
+        <h1> {{page.title}}</h1>
+      </div>
+    </header>
+    <p>lo</p>
+    {{content}}
 
   </body>
 </html>
