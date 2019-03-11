@@ -1,0 +1,141 @@
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+img{
+  max-width: 100%;
+}
+
+/* defaults */
+
+body{
+  font-family: 'Playfair Display', serif;
+  color: #888
+}
+
+section, footer{
+  padding: 5%;
+}
+
+/* typography */
+h1,h2,h3,h4,h5,h6{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: .6em;
+}
+
+h1{
+  font-size: 2.2rem
+}
+
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.7rem
+}
+
+p{
+  margin-bottom: 1rem
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* modular */
+
+.center{text-align: center;}
+.right{text-align: right}
+
+.banner{
+  min-height: 40vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.loop-bg{
+  min-height: 20vw;
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-center{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button{
+  background-color: rgb(179, 162, 162);
+  color: #222;
+  display: inline-block;
+  padding: 3%;
+  border-radius: 1rem;
+}
+
+.color-break{
+  background-color: rgb(179, 162, 162);
+  color: #222;
+}
+
+.color-break .button {
+  background-color: #eee;
+  color:rgb(179, 162, 162)
+}
+
+
+
+/* section's */
+
+header nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left:0;
+  background-color: rgb(179, 162, 162);
+  color: #fff;
+}
+
+header a{
+  display: inline-block;
+  padding:1% 2%;
+  margin: 0 2%;
+  text-transform: capitalize;
+}
+
+
+
+input{
+  min-width: 51%;
+  padding: 2%;
+  display: inline-block;
+  margin: 0 auto 1rem;
+  border: 0px solid red;
+  border-bottom: 1px solid black;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+input[type="submit"]{
+  border-radius: 3px;
+  min-width:13%;
+  border: 1px solid black;
+  -webkit-appearance: none;
+}
+
+input:focus{
+  outline: none;
+}
