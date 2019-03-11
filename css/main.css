@@ -54,6 +54,12 @@ a{
 .center{text-align: center;}
 .right{text-align: right}
 
+.order-4{
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
 .banner{
   min-height: 40vh;
   background-position: center;
@@ -100,7 +106,7 @@ a{
 
 
 /* section's */
-
+    /* header */
 header nav{
   position: fixed;
   top: 0;
@@ -117,7 +123,7 @@ header a{
   text-transform: capitalize;
 }
 
-
+    /* footer */
 
 input{
   min-width: 51%;
@@ -138,4 +144,18 @@ input[type="submit"]{
 
 input:focus{
   outline: none;
+}
+
+
+    /* blog-posts */
+.blog-post img{
+  display: block;
+  width:90%;
+  margin:1rem auto;
+}
+
+.profile{
+  display: block;
+  margin: 1rem auto;
+
 }

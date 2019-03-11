@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<section class="grid-spaceAround">
+  <div class="col-8 blog-post">
+    {{content}}
+  </div>
+  <div class="col-3">
+    <h2 class="editable">About Jessie Livingston</h2>
+    <img class="editable profile" src="https://picsum.photos/200/300/?random" alt="jessie livingston">
+    <p class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h2>Recent Post</h2>
+    <div class="grid">
+
+      {% for post in site.posts limit:3 %}
+        {% if page.url != post.url %}
+        <div class="col-12">
+          <a href="{{post.url}}">
+            <h2>{{post.title}}</h2>
+            <div class="loop-bg" style="background-image:url('{{post.banner_path}}')"></div>
+            <p>{{post.excerpt | strip_html | truncatewords:75}}</p>
+            <p class="button">read more</p>
+          </a>
+        </div>
+        {% else %}
+          {% for post in site.posts limit:1 offset:3 %}
+            <div class="col-12 order-4">
+
+              <a href="{{post.url}}">
+                <h2>{{post.title}}</h2>
+                <div class="loop-bg" style="background-image:url('{{post.banner_path}}')"></div>
+                <p>{{post.excerpt | strip_html | truncatewords:75}}</p>
+                <p class="button">read more</p>
+              </a>
+            </div>
+          {%endfor%}
+        {% endif %}
+      {%endfor%}
+    </div>
+  </div>
+
+</section>
