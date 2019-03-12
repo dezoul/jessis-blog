@@ -19,7 +19,7 @@ body{
 }
 
 section, footer{
-  padding: 5%;
+  padding:2% 5%;
 }
 
 /* typography */
@@ -52,7 +52,14 @@ a{
 /* modular */
 
 .center{text-align: center;}
-.right{text-align: right}
+.right{text-align: right;}
+
+.padded
+
+
+.full-width{
+  width: 100%;
+}
 
 .order-4{
   -webkit-box-ordinal-group: 5;
@@ -83,6 +90,13 @@ a{
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.flex-flip:nth-child(even){
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .button{
@@ -151,7 +165,7 @@ input:focus{
 .blog-post img{
   display: block;
   width:90%;
-  margin:1rem auto;
+  margin:1remgr auto;
 }
 
 .profile{
