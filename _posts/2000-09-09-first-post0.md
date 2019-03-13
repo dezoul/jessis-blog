@@ -1,6 +1,7 @@
 ---
 layout: posts
-banner_path: https://picsum.photos/200/300/?random
+banner_path: https://picsum.photos/900/200/?random
+banner_text_color: #fff
 title: jessie livingston
 seo-description:
 seo-image:
