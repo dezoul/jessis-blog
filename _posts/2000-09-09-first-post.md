@@ -1,6 +1,11 @@
 ---
 layout: posts
 banner_path: https://picsum.photos/200/300/?random
+title: jessie livingston
+seo-description:
+seo-image:
+categories:
+  - travel
 ---
 
 
