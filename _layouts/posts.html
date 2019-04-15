@@ -20,7 +20,10 @@ layout: default
             <h2>{{post.title}}</h2>
             <div class="loop-bg" style="background-image:url('{{post.banner_path}}')"></div>
             <p>{{post.excerpt | strip_html | truncatewords:75}}</p>
-            <p class="button">read more</p>
+            <div class="center">
+              <p class="button">read more</p>
+            </div>
+
           </a>
         </div>
         {% else %}
