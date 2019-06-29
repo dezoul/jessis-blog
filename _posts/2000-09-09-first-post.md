@@ -5,8 +5,7 @@ banner_text_color: #fff
 title: jessie livingston
 seo-description:
 seo-image:
-categories:
-  - travel
+category: travel
 ---
 
 
