@@ -53,6 +53,7 @@ a{
 .center{text-align: center;}
 .right{text-align: right;}
 
+.padded{ padding: 5%;}
 
 .padded-0{
   padding: 0
@@ -67,14 +68,14 @@ a{
 }
 
 .banner{
-  min-height: 40vh;
+  min-height: 80vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .loop-bg{
-  min-height: 20vw;
+  min-height: 34vw;
   background-position: center;
   background-size: cover;
 }
@@ -90,16 +91,16 @@ a{
 }
 
 .button{
-  background-color: #3853a3;
+  background-color: #b7a8a9;
   color: #eee;
   display: inline-block;
-  padding: 1% 3%;
+  padding: 3% 6%;
   border-radius: 1rem;
 
 }
 
 .color-break{
-  background-color: #3853a3;
+  background-color: #b7a8a9;
   color: #FFF;
 }
 
@@ -149,7 +150,7 @@ header nav{
   top: 0;
   right: 0;
   left:0;
-  background-color: #3853a3;
+  background-color: #b7a8a9;
   color: #fff;
   z-index: 10;
 }
@@ -163,7 +164,7 @@ header a{
 
     /* footer */
 footer{
-  background-color: #3853a3;
+  background-color: #b7a8a9;
   color: #fff
 }
 

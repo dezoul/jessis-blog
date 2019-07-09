@@ -1,6 +1,6 @@
 ---
 layout: default
-banner_path: 'https://picsum.photos/200/300/?random'
+banner_path: /images/ballon.jpeg
 banner_text_color:
 title: jessie livingston
 seo-description: Empowering entrepreneurs through branding and social media strategy
@@ -29,6 +29,7 @@ keywords:
 </section>
 
 <section class="grid-spaceAround color-break">
+  <h2 class="col-12 center padded editable">Some of my Stories</h2>
 {% for post in site.posts limit:3 %}
   <div class="col-3_md-12">
     <div class="loop-bg" style="background-image:url('{{post.banner_path}}')">
