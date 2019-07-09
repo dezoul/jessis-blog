@@ -32,16 +32,12 @@ keywords:
   <h2 class="col-12 center padded editable">Some of my Stories</h2>
 {% for post in site.posts limit:3 %}
   <div class="col-3_md-12">
-    <div class="loop-bg" style="background-image:url('{{post.banner_path}}')">
+    <a href="{{post.url}}">
+    <div class="loop-bg flex-center" style="background-image:url('{{post.banner_path}}')">
+      <h2 class="transparent-bg padded">{{post.title}}</h2>
     </div>
-    <h2>{{post.title}}</h2>
-    {{post.excerpt | truncatewords: 9750}}
-    <div class="right">
-      <a href="{{post.url}}">
-        <p class="button">read more</p>
-      </a>
-    </div>
-
+    <!-- {{post.excerpt | truncatewords: 9750}} -->
+  </a>
   </div>
   {%endfor%}
 </section>

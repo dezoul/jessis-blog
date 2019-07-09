@@ -13,7 +13,7 @@ img{
 /* defaults */
 
 body{
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cantarell', sans-serif;
   color: #888
 }
 
@@ -24,7 +24,7 @@ section, footer{
 /* typography */
 h1,h2,h3,h4,h5,h6{
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   margin-bottom: .6em;
 }
 
@@ -58,7 +58,7 @@ a{
 .padded-0{
   padding: 0
 }
-
+.full-width-parent > *,
 .full-width{
   width: 100%;
 }
@@ -75,9 +75,13 @@ a{
 }
 
 .loop-bg{
-  min-height: 34vw;
+  min-height: 17vw;
   background-position: center;
   background-size: cover;
+}
+
+.transparent-bg{
+    background-color: rgba(255,255,255,.4);
 }
 
 .flex-center{
@@ -169,17 +173,17 @@ footer{
 }
 
 input{
-  min-width: 51%;
-  padding: 2%;
+  min-width: 30%;
+  padding: 1%;
   display: inline-block;
-  margin: 0 auto 1rem;
+  margin: 1.1%;
   border: 0px solid red;
   border-bottom: 1px solid black;
   transition: all 1s;
 }
 input[type="submit"]{
   border-radius: 3px;
-  min-width:13%;
+  /* min-width:13%; */
   border: 1px solid black;
   -webkit-appearance: none;
 }
