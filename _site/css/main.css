@@ -63,13 +63,24 @@ a{
   width: 100%;
 }
 
+.half-width{
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+.one-third-width{
+  width: 33%;
+  display: block;
+  margin: auto;
+}
+
 .order-4{
   order: 4;
 }
 
 .logo{
-  width: 60px;
-  margin: 2% auto 0;
+  max-width: 90px;
+  padding: 2%;
 }
 
 .banner{
@@ -219,4 +230,5 @@ input:focus{
   margin: auto;
   /* max-height: 450px;
   min-height:400px; */
+}
 }
