@@ -58,15 +58,18 @@ a{
 .padded-0{
   padding: 0
 }
-.full-width-parent > *,
+.full-width-parent  img,
 .full-width{
   width: 100%;
 }
 
+
+.half-width-parent  img,
 .half-width{
   width: 50%;
   display: block;
   margin: auto;
+  height: auto !important;
 }
 .one-third-width{
   width: 33%;
@@ -79,8 +82,12 @@ a{
 }
 
 .logo{
-  max-width: 90px;
+  width: 180px;
+  max-width: 20%;
   padding: 2%;
+  position: absolute;
+  z-index: 11;
+  top:2rem
 }
 
 .banner{
