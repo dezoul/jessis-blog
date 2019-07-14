@@ -67,6 +67,11 @@ a{
   order: 4;
 }
 
+.logo{
+  width: 60px;
+  margin: 2% auto 0;
+}
+
 .banner{
   min-height: 80vh;
   background-position: center;
